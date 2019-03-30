@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import PageLayout from './components/PageLayout';
 
 import image1 from './images/thumb-1.jpg';
 import image2 from './images/thumb-2.jpg';
@@ -14,8 +15,42 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
+      <PageLayout isDark={true} >
+         <div className="Home-header">
+
+            <div className="Menu">
+                  <img src={logo} className="App-logo" alt="logo" />
+                
+            </div>
+
+            <div className="Content">
+              <h1>Your vision<br />Our Solution</h1>
+              <div className="Divider"> </div>
+              <p>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum</p>
+                                
+            </div>
+
+         </div>
+      </PageLayout>
+      
+
+      <PageLayout>
+          Masodik oldal
+      </PageLayout>
+      
+
+      <PageLayout isDark={true}>
+          Harmadik oldal
+      </PageLayout>
+      
+
+      <PageLayout>
+          Hey Istvan
+      </PageLayout>
+      
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        
           
         </header>
         <div id="container">

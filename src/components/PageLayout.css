@@ -1,0 +1,11 @@
+.PageLayout {
+    height: 100vh;
+}
+.PageLayout.dark {
+    background: black;
+    color: white
+}
+.PageLayout.light {
+    background:white;
+    color: black;
+}
