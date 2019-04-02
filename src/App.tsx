@@ -16,12 +16,31 @@ class App extends Component {
     return (
       <div className="App">
 
+<PageLayout isDark={true}>
+    <div className="Contact-us">
+
+    <div className="Contact-us-container">
+          <div className="Contact-us-item">
+            Div1
+          </div>
+          <div className="Contact-us-item">
+            Div1
+          </div>
+    </div>
+
+    <div className="footer">
+      <p>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum</p>
+                        
+    </div>
+
+</div>  
+      </PageLayout>
+
       <PageLayout isDark={true} >
          <div className="Home-header">
 
             <div className="Menu">
                   <img src={logo} className="App-logo" alt="logo" />
-                
             </div>
 
             <div className="Content">
@@ -35,9 +54,7 @@ class App extends Component {
       </PageLayout>
       
 
-      <PageLayout>
-          Masodik oldal
-      </PageLayout>
+  
       
 
       <PageLayout isDark={true}>
