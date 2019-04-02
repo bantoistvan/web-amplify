@@ -60,14 +60,6 @@
   width: 100px;
 }
 
-.Footer-divider{
-  display: block;
-  flex-wrap: wrap;
-  background-color: white;
-  height: 1px;
-  width: 300px;
-}
-
 .Social-contact {
 display: flex;
 flex-wrap: wrap;
@@ -75,6 +67,7 @@ flex-wrap: wrap;
 
 
 .footer {
+  border-top: 1px solid white;
 color: white;  
 font-size: 12px;
 text-align: center;

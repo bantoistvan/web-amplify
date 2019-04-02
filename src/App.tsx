@@ -33,10 +33,16 @@ class App extends Component {
           </div>
           <div className="Contact-us-item">
             <h2>Message us</h2>
-            
+            <form>
+              <label>Your name: <input id="name" /></label>
+              <label>Your email: <input id="email" /></label>
+      
+              <label>Message: <textarea id="email" /></label>
+              
+            </form>
+
           </div>
     </div>
-    <div className="Footer-divider"> </div>
     <div className="footer">
       <p>ZED VISION 2019</p>
                         
