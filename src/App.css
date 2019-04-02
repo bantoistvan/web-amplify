@@ -22,16 +22,12 @@
   
 }
 
-
-
 .Contact-us {
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 80px;
@@ -49,10 +45,12 @@
 }
 
 .Contact-us-item{
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   background-color: green;
   border: 2px solid yellow;
+  justify-content: center;
+  margin: 10px;
 }
 
 .Divider{
@@ -60,6 +58,26 @@
   background-color: #35c2f8;
   height: 1px;
   width: 100px;
+}
+
+.Footer-divider{
+  display: block;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 1px;
+  width: 300px;
+}
+
+.Social-contact {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.footer {
+color: white;  
+font-size: 12px;
+text-align: center;
 }
 
 .Content {

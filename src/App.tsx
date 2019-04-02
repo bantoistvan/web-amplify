@@ -21,15 +21,24 @@ class App extends Component {
 
     <div className="Contact-us-container">
           <div className="Contact-us-item">
-            Div1
+            <h2>Contact us</h2>
+            <p>Don't be shy! Drop us an e-mail and say Hello!</p>
+           
+            <div className="Social-contact"></div>
+            <p>e-mail</p>
+            <p>twitter</p>
+            <p>github</p>
+            <p>linkedin</p>
+            
           </div>
           <div className="Contact-us-item">
-            Div1
+            <h2>Message us</h2>
+            
           </div>
     </div>
-
+    <div className="Footer-divider"> </div>
     <div className="footer">
-      <p>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum</p>
+      <p>ZED VISION 2019</p>
                         
     </div>
 
