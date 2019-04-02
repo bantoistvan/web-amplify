@@ -16,85 +16,64 @@ class App extends Component {
     return (
       <div className="App">
 
-<PageLayout isDark={true}>
-    <div className="Contact-us">
 
-    <div className="Contact-us-container">
-          <div className="Contact-us-item">
-            <h2>Contact us</h2>
-            <p>Don't be shy! Drop us an e-mail and say Hello!</p>
-           
-            <div className="Social-contact"></div>
-            <p>e-mail</p>
-            <p>twitter</p>
-            <p>github</p>
-            <p>linkedin</p>
-            
-          </div>
-          <div className="Contact-us-item">
-            <h2>Message us</h2>
-            <form>
-              <label>Your name: <input id="name" /></label>
-              <label>Your email: <input id="email" /></label>
-      
-              <label>Message: <textarea id="email" /></label>
-              
-            </form>
-
-          </div>
-    </div>
-    <div className="footer">
-      <p>ZED VISION 2019</p>
-                        
-    </div>
-
-</div>  
-      </PageLayout>
-
-      <PageLayout isDark={true} >
-         <div className="Home-header">
+        <PageLayout isDark={true} >
+          <div className="Home-header">
 
             <div className="Menu">
-                  <img src={logo} className="App-logo" alt="logo" />
+              <img src={logo} className="App-logo" alt="logo" />
             </div>
 
             <div className="Content">
               <h1>Your vision<br />Our Solution</h1>
               <div className="Divider"> </div>
-              <p>Lorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsumLorem ipsum lorem ipsum</p>
-                                
+              <p>We are going to help you and your business to change for the better.</p>
+              <p>We are offering IT and API solutions.</p>
+              <p>Get know more, contact us!</p>
             </div>
 
-         </div>
-      </PageLayout>
-      
+          </div>
+        </PageLayout>
 
-  
-      
 
-      <PageLayout isDark={true}>
-          Harmadik oldal
-      </PageLayout>
-      
 
-      <PageLayout>
-          Hey Istvan
-      </PageLayout>
-      
-        <header className="App-header">
-        
-          
-        </header>
-        <div id="container">
-        <ul id="flex-container">
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image1} /></a></li>
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image2} /></a></li>
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image3} /></a></li>
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image4} /></a></li>
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image5} /></a></li>
-          <li><a href="#"><div className="magnify"></div><span>Cultura</span><img src={image6} /></a></li>
-        </ul>
-        </div>
+
+
+        <PageLayout isDark={true}>
+          <div className="Contact-us">
+
+            <div className="Contact-us-container">
+              <div className="Contact-us-item">
+                <h2>Contact us</h2>
+                <p>Don't be shy! Drop us an e-mail and say Hello!</p>
+
+                <div className="Social-contact"></div>
+                <p>e-mail</p>
+                <p>twitter</p>
+                <p>github</p>
+                <p>linkedin</p>
+
+              </div>
+              <div className="Contact-us-item">
+                <h2>Message us</h2>
+                <div className="form">
+                <form>
+                  <label>Your name: <input id="name" /></label>
+                  <p><label>Your email: <input id="email" /></label></p>
+
+                  <label>Message: <textarea id="email" /></label>
+
+                </form>
+</div>
+              </div>
+            </div>
+            <div className="footer">
+              <p>ZED VISION 2019</p>
+
+            </div>
+
+          </div> 
+            </PageLayout>    
       </div>
     );
   }
