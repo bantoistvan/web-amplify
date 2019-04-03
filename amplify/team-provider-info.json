@@ -1,0 +1,14 @@
+{
+    "zerdos": {
+        "awscloudformation": {
+            "AuthRoleName": "zed-web-20190316111716-authRole",
+            "UnauthRoleArn": "arn:aws:iam::209616764690:role/zed-web-20190316111716-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::209616764690:role/zed-web-20190316111716-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "zed-web-20190316111716-deployment",
+            "UnauthRoleName": "zed-web-20190316111716-unauthRole",
+            "StackName": "zed-web-20190316111716",
+            "StackId": "arn:aws:cloudformation:eu-west-1:209616764690:stack/zed-web-20190316111716/0ec0ed60-47dd-11e9-a301-0a2f634edb2c"
+        }
+    }
+}

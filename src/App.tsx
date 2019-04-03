@@ -15,8 +15,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-
         <PageLayout isDark={true} >
           <div className="Home-header">
 
@@ -57,14 +55,14 @@ class App extends Component {
               <div className="Contact-us-item">
                 <h2>Message us</h2>
                 <div className="form">
-                <form>
-                  <label>Your name: <input id="name" /></label>
-                  <p><label>Your email: <input id="email" /></label></p>
+                  <form>
+                    <label>Your name: <input id="name" /></label>
+                    <p><label>Your email: <input id="email" /></label></p>
 
-                  <label>Message: <textarea id="email" /></label>
+                    <label>Message: <textarea id="email" /></label>
 
-                </form>
-</div>
+                  </form>
+                </div>
               </div>
             </div>
             <div className="footer">
@@ -72,8 +70,8 @@ class App extends Component {
 
             </div>
 
-          </div> 
-            </PageLayout>    
+          </div>
+        </PageLayout>
       </div>
     );
   }
