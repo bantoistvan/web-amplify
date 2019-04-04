@@ -8,6 +8,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField } from '@material-ui/core';
+import ContactUs from './components/ContactUs';
 
 
 const styles = {
@@ -69,28 +70,7 @@ class App extends Component<{ classes: any }> {
                 <p>linkedin</p>
               </Typography>
             </Paper>
-            <Paper className={classes.paper}>
-              <Typography variant="h5" component="h2">
-                Message us
-              </Typography>
-              <Typography>
-                <form>
-
-                  <TextField
-                    id="outlined-name"
-                    label="Name"
-                    className={classes.textField}
-                    value="Istvan"
-                    onChange={() => { }}
-                    margin="normal"
-                  />
-                  <p><label>Your email: <input id="email" /></label></p>
-
-                  <label>Message: <textarea id="email" /></label>
-
-                </form>
-              </Typography>
-            </Paper>
+            <ContactUs />
           </Grid>
           <div className="footer">
             <p>ZED VISION 2019</p>
