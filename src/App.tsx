@@ -3,16 +3,31 @@ import logo from './logo.svg';
 import './App.css';
 import PageLayout from './components/PageLayout';
 
-import image1 from './images/thumb-1.jpg';
-import image2 from './images/thumb-2.jpg';
-import image3 from './images/thumb-3.jpg';
-import image4 from './images/thumb-4.jpg';
-import image5 from './images/thumb-5.jpg';
-import image6 from './images/thumb-6.jpg';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import { TextField } from '@material-ui/core';
 
 
-class App extends Component {
+const styles = {
+  root: {
+    flexGrow: 1,
+    padding: 24,
+  },
+  paper: {
+    margin: 15,
+    padding: 16,
+    width: 400,
+  }
+};
+
+
+class App extends Component<{ classes: any }> {
   render() {
+
+    const { classes } = this.props;
+
     return (
       <div className="App">
         <PageLayout isDark={true} >
@@ -33,42 +48,52 @@ class App extends Component {
           </div>
         </PageLayout>
 
-
-
-
-
         <PageLayout isDark={true}>
-          <div className="Contact-us">
 
-            <div className="Contact-us-container">
-              <div className="Contact-us-item">
-                <h2>Contact us</h2>
-                <p>Don't be shy! Drop us an e-mail and say Hello!</p>
+          <Grid container justify="center" spacing={16} className={classes.root}>
+            <Paper className={classes.paper}>
+              <Typography variant="h5" component="h2">
+                Contact us
+                </Typography>
 
-                <div className="Social-contact"></div>
+
+              <Typography component="p">
+                Don't be shy! Drop us an e-mail and say Hello!
+                  </Typography>
+
+
+              <Typography component="p">
                 <p>e-mail</p>
                 <p>twitter</p>
                 <p>github</p>
                 <p>linkedin</p>
+              </Typography>
+            </Paper>
+            <Paper className={classes.paper}>
+              <Typography variant="h5" component="h2">
+                Message us
+              </Typography>
+              <Typography>
+                <form>
 
-              </div>
-              <div className="Contact-us-item">
-                <h2>Message us</h2>
-                <div className="form">
-                  <form>
-                    <label>Your name: <input id="name" /></label>
-                    <p><label>Your email: <input id="email" /></label></p>
+                  <TextField
+                    id="outlined-name"
+                    label="Name"
+                    className={classes.textField}
+                    value="Istvan"
+                    onChange={() => { }}
+                    margin="normal"
+                  />
+                  <p><label>Your email: <input id="email" /></label></p>
 
-                    <label>Message: <textarea id="email" /></label>
+                  <label>Message: <textarea id="email" /></label>
 
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div className="footer">
-              <p>ZED VISION 2019</p>
-
-            </div>
+                </form>
+              </Typography>
+            </Paper>
+          </Grid>
+          <div className="footer">
+            <p>ZED VISION 2019</p>
 
           </div>
         </PageLayout>
@@ -77,4 +102,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
