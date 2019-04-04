@@ -28,6 +28,16 @@ class ContactUs extends Component<{ classes: any }, ContactUsState> {
         this.setState({ "name": value });
     };
 
+    setEmail(value: string) {
+        console.log(value);
+        this.setState({ "email": value });
+    };
+
+    setMessage(value: string) {
+        console.log(value);
+        this.setState({ "message": value });
+    };
+
     render() {
         const classes = this.props.classes;
 
@@ -48,21 +58,21 @@ class ContactUs extends Component<{ classes: any }, ContactUsState> {
                         margin="normal"
                     /><br />
                     <TextField
-                        id="outlined-name"
+                        id="outlined-email"
                         label="Email"
                         className={classes.textField}
                         value={this.state.email}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setName(e.target.value)}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setEmail(e.target.value)}
 
                         margin="normal"
                     /><br />
 
                     <TextField
-                        id="outlined-name"
+                        id="outlined-message"
                         label="Message"
                         className={classes.textField}
                         value={this.state.message}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setName(e.target.value)}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setMessage(e.target.value)}
                         multiline
                         fullWidth
                         rowsMax="4"

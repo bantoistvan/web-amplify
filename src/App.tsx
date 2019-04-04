@@ -59,7 +59,7 @@ class App extends Component<{ classes: any }> {
 
 
               <Typography component="p">
-                Don't be shy! Drop us an e-mail and say Hello!
+                <p>Don't be shy! Drop us an e-mail and say Hello!</p>
                   </Typography>
 
 
