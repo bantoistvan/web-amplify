@@ -1,6 +1,6 @@
 import React, { Component, ChangeEvent } from 'react';
 import { Paper, Typography, TextField, withStyles, Button, Icon, Grid } from '@material-ui/core';
-import { DockerIcon, NodeJsIcon } from './icons';
+import { DockerIcon, NodeJsIcon, KubernetesIcon } from './icons';
 
 const styles = {
     paper: {
@@ -29,7 +29,7 @@ class Logos extends Component<{ classes: any }> {
                     <tr>
                         <td className={classes.iconTable}><DockerIcon /></td>
                         <td className={classes.iconTable}><NodeJsIcon /></td>
-                        <td className={classes.iconTable}><DockerIcon /></td>
+                        <td className={classes.iconTable}><KubernetesIcon /></td>
                         <td className={classes.iconTable}><DockerIcon /></td>
                         <td className={classes.iconTable}><DockerIcon /></td>
                     </tr>
