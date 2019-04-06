@@ -8,3 +8,5 @@ export * from "./ServerlessIcon";
 export * from "./AwsIcon";
 export * from "./TsIcon";
 export * from "./CypressIcon";
+export * from "./GitHubIcon";
+export * from "./LinkedInIcon";

@@ -12,7 +12,7 @@ const styles = {
         width: 400,
     },
     iconTable: {
-        border: '2px solid red'
+        border: '2px solid white'
     }
 
 };
