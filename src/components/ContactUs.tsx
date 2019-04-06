@@ -1,7 +1,6 @@
 import React, { Component, ChangeEvent } from 'react';
 import { Paper, Typography, TextField, withStyles, Button, Icon } from '@material-ui/core';
 
-
 const styles = {
     paper: {
         margin: 15,
