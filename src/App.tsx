@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField } from '@material-ui/core';
 import ContactUs from './components/ContactUs';
-import {DockerIcon} from './components/icons';
+import {DockerIcon, GitHubIcon} from './components/icons';
 import { LogoComponent } from './components/Logos';
 
 
@@ -66,7 +66,7 @@ class App extends Component<{ classes: any }> {
 
 
               <Typography component="p">
-                <p><DockerIcon />e-mail</p>
+                <p><GitHubIcon /><GitHubIcon /></p>
                 <p>twitter</p>
                 <p>github</p>
                 <p>linkedin</p>
