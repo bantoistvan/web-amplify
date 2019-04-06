@@ -10,6 +10,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { TextField } from '@material-ui/core';
 import ContactUs from './components/ContactUs';
 import {DockerIcon} from './components/icons';
+import { LogoComponent } from './components/Logos';
 
 
 const styles = {
@@ -72,6 +73,7 @@ class App extends Component<{ classes: any }> {
               </Typography>
             </Paper>
             <ContactUs />
+            <LogoComponent />
           </Grid>
           <div className="footer">
             <p>ZED VISION 2019</p>
