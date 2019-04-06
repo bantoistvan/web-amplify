@@ -1,6 +1,5 @@
 import React, { Component, ChangeEvent } from 'react';
-import classNames from 'classnames';
-import { Paper, Typography, TextField, withStyles } from '@material-ui/core';
+import { Paper, Typography, TextField, withStyles, Button, Icon } from '@material-ui/core';
 
 
 const styles = {
@@ -8,6 +7,12 @@ const styles = {
         margin: 15,
         padding: 16,
         width: 400,
+    },
+    rightIcon: {
+        marginLeft: 10,
+      },
+    button: {
+        float: "right" as "right"
     }
 };
 
@@ -45,41 +50,47 @@ class ContactUs extends Component<{ classes: any }, ContactUsState> {
             <Paper className={classes.paper}>
                 <Typography variant="h5" component="h2">
                     Message us
-        </Typography>
-                <Typography>
-
-                    <TextField
-                        id="outlined-name"
-                        label="Name"
-                        className={classes.textField}
-                        value={this.state.name}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setName(e.target.value)}
-
-                        margin="normal"
-                    /><br />
-                    <TextField
-                        id="outlined-email"
-                        label="Email"
-                        className={classes.textField}
-                        value={this.state.email}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setEmail(e.target.value)}
-
-                        margin="normal"
-                    /><br />
-
-                    <TextField
-                        id="outlined-message"
-                        label="Message"
-                        className={classes.textField}
-                        value={this.state.message}
-                        onChange={(e: ChangeEvent<HTMLInputElement>) => this.setMessage(e.target.value)}
-                        multiline
-                        fullWidth
-                        rowsMax="4"
-                        margin="normal"
-                    />
-
                 </Typography>
+                <TextField
+                    id="outlined-name"
+                    label="Name"
+                    fullWidth
+                    className={classes.textField}
+                    value={this.state.name}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => this.setName(e.target.value)}
+
+                    margin="normal"
+                />
+                <TextField
+                    id="outlined-email"
+                    label="Email"
+                    fullWidth
+                    className={classes.textField}
+                    value={this.state.email}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => this.setEmail(e.target.value)}
+
+                    margin="normal"
+                />
+
+                <TextField
+                    id="outlined-message"
+                    label="Message"
+                    className={classes.textField}
+                    value={this.state.message}
+                    onChange={(e: ChangeEvent<HTMLInputElement>) => this.setMessage(e.target.value)}
+                    multiline
+                    fullWidth
+                    rows="3"
+                    rowsMax="3"
+                    margin="normal"
+                />
+
+        <Button variant="contained" color="primary" className={classes.button}>
+        Send
+        {/* This Button uses a Font Icon, see the installation instructions in the docs. */}
+        <Icon className={classes.rightIcon}>send</Icon>
+      </Button>
+
             </Paper>
         );
     }

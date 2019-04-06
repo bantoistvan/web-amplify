@@ -1,0 +1,4 @@
+{
+    "AppSyncApiName": "zedgraphql",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST"
+}
