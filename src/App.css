@@ -1,6 +1,6 @@
 
 .Home-header {
-  background: url(./images/london-city-header.jpg) no-repeat center center;
+  background: url(./assets/london-city-header.jpg) no-repeat center center;
   min-height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -168,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 .magnify {
-  background: url(./images/magnify.png) no-repeat;
+  background: url(./assets/magnify.png) no-repeat;
   position: absolute;
   z-index: 5;
   width: 54px;
