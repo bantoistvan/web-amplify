@@ -1,0 +1,16 @@
+projects:
+  zedgraphql:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - src/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: src/graphql
+        graphQLApiId: acywjetj5rfqfkeegfgw4lmaki
+      endpoints:
+        prod: >-
+          https://7tujdejbzjfgppq4izesdvlxpe.appsync-api.eu-west-1.amazonaws.com/graphql
