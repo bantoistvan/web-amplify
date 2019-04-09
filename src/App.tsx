@@ -44,7 +44,7 @@ class App extends Component<{ classes: any }> {
               <h1>Your vision<br />Our Solution</h1>
               <div className="Divider"> </div>
               <p>We are going to help you and your business to change for the better.</p>
-              <p>We are offering IT and API solutions.</p>
+              <p>We are offering IT and API solutions..</p>
               <p>Get know more, contact us!</p>
             </div>
 
